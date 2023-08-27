@@ -34,6 +34,7 @@
             class="fa-solid fa-magnifying-glass absolute text-gray-400 left-2.5 top-1/2 -translate-y-1/2"
           ></i>
           <input
+            id="search"
             type="text"
             class="border shadow rounded-full pl-8 py-1 w-full"
             placeholder="Search Dishes"
@@ -49,15 +50,8 @@
       </section>
 
       <!-- categories -->
-      <section class="flex space-x-4 py-4 px-4 overflow-x-auto">
-        <button class="shadow py-1 px-2 rounded bg-brand text-white">
-          Burger
-        </button>
-        <button class="shadow py-1 px-2 rounded">Pizza</button>
-        <button class="shadow py-1 px-2 rounded">Pasta</button>
-        <button class="shadow py-1 px-2 rounded">Salad</button>
-        <button class="shadow py-1 px-2 rounded">Dessert</button>
-        <button class="shadow py-1 px-2 rounded">Drinks</button>
+      <section id="categoriesContainer" class="flex space-x-4 py-4 px-4 overflow-x-auto">
+       
       </section>
 
       <!-- products -->
@@ -65,23 +59,11 @@
         <h2 class="font-bold text-2xl">Explore Our Tasty Menu</h2>
 
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 space-y-7 mt-4"
+        id="productsContainer"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4 gap-6"
         >
           <!-- product item -->
-          <div class="flex space-x-2 pr-2 shadow-md rounded-xl overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
-              alt="Food"
-              class="w-28 h-28 object-cover"
-            />
-            <div>
-              <h3 class="font-semibold text-lg">Product Name</h3>
-              <p class="text-sm text-gray-400">
-                Substance consisting essentially of protein, carbohydrate & fat.
-              </p>
-              <p class="mt-3 text-brand font-bold">3.00$</p>
-            </div>
-          </div>
+          
         </div>
       </section>
 
@@ -141,5 +123,7 @@
         </p>
       </footer>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
